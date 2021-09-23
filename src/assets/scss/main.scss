@@ -57,7 +57,27 @@ footer{
     }
 }
 
+.drop-zone{
+    .upload-input{
+        height: 250px !important;
+        width: 90% !important;
+        border-radius: 5px !important;
+        position:absolute;
+        opacity: 0; 
+    }
+
+    .uploader-mask{
+        height: 250px !important;
+        width: 99% !important;
+        border-radius: 5px !important;
+        border: 2px dashed #ccc;
+    }
+    
+    .uploader-icon{
+        height: 35px !important;
+    }
+}
+
 .uploaded-img{
     height: 100px !important;
 }
-

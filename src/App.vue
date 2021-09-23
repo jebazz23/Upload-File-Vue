@@ -15,11 +15,18 @@
               <SingleUploader 
               id="single-file-upload" 
               label="Upload File Here..." 
-              api="images/single-upload"/>
+              api="images/single-upload"
+              />
               <MultiUploader 
               id="multi-file-upload" 
+              api="images/multi-upload"
               label="Upload Multiple Files Here..." 
-              api="images/multi-upload"/>
+              />
+              <DropzoneUploader 
+              id="multi-file-upload" 
+              api="images/single-upload"
+              label="Upload Your Files Here..." 
+              />
             </form>
           </div>
           </div>
@@ -34,14 +41,16 @@
 import Navbar from "./components/Layouts/Navbar.vue";
 import Footer from "./components/Layouts/Footer.vue";
 import SingleUploader from "./components/Uploader/SingleUploader.vue";
-import MultiUploader from "./components/Uploader/MultipleUploader.vue"
+import MultiUploader from "./components/Uploader/MultipleUploader.vue";
+import DropzoneUploader from "./components/Uploader/Dropzone.vue";
 export default {
   name: "App",
   components: {
     Navbar,
     Footer,
     SingleUploader,
-    MultiUploader
+    MultiUploader,
+    DropzoneUploader
   },
 };
 </script>
