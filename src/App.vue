@@ -12,7 +12,14 @@
             </div>
              <div class="card-body">
             <form>
-              <SingleUploader label="Upload File Here..." />
+              <SingleUploader 
+              id="single-file-upload" 
+              label="Upload File Here..." 
+              api="images/single-upload"/>
+              <MultiUploader 
+              id="multi-file-upload" 
+              label="Upload Multiple Files Here..." 
+              api="images/multi-upload"/>
             </form>
           </div>
           </div>
@@ -27,12 +34,14 @@
 import Navbar from "./components/Layouts/Navbar.vue";
 import Footer from "./components/Layouts/Footer.vue";
 import SingleUploader from "./components/Uploader/SingleUploader.vue";
+import MultiUploader from "./components/Uploader/MultipleUploader.vue"
 export default {
   name: "App",
   components: {
     Navbar,
     Footer,
     SingleUploader,
+    MultiUploader
   },
 };
 </script>

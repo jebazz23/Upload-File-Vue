@@ -34,7 +34,8 @@ footer{
     box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
-.single{
+.single, 
+.multi{
     .upload-input{
         height: 100px !important;
         width: 100px !important;
@@ -54,5 +55,9 @@ footer{
     .uploader-icon{
         height: 35px !important;
     }
+}
+
+.uploaded-img{
+    height: 100px !important;
 }
 
